@@ -1,0 +1,548 @@
+.modal-create .modal-dialog {
+	min-width: 1280px;
+}
+
+.modal-create .modal-content {
+	border-radius: 32px;
+	padding: 12px;
+}
+
+.modal-create__status {
+	display: flex;
+	align-items: center;
+}
+
+.modal-create__status-item {
+	display: flex;
+	align-items: center;
+}
+
+.modal-create__status-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 55px;
+	height: 55px;
+	border: 2px solid rgba(60, 60, 67, 0.18);
+	border-radius: 50%;
+	margin-right: 12px;
+}
+
+.modal-create__status-item svg {
+	fill: rgba(60, 60, 67, 0.18);
+	width: 40px;
+}
+
+.modal-create__status-item.active {
+	color: #bd257f;
+}
+
+.modal-create__status-item.active svg {
+	fill: #bd257f;
+}
+
+.modal-create__status-item.success {
+	color: green;
+}
+
+.modal-create__status-item.succses svg {
+	fill: green;
+}
+
+.modal-create__status-item + .modal-create__status-item {
+	margin-left: 80px;
+}
+
+.modal-create__info {
+	display: flex;
+	/* display: none; */
+}
+
+.modal-create__poster {
+	width: 280px;
+	height: 420px;
+	margin-right: 30px;
+	border-radius: 32px;
+}
+
+.modal-create__film {
+	min-width: 503px;
+}
+
+.modal-create__film h2 {
+	max-width: 520px;
+}
+
+.modal-create__film span {
+	color: rgba(60, 60, 67, 0.6);
+	font-size: 17px;
+}
+
+.modal-create__tags {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-top: 30px;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.modal-create__tags li {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	width: 40px;
+}
+
+.modal-create__tags span {
+	border: 1px solid black;
+	border-radius: 4px;
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 26px;
+	width: 40px;
+}
+
+.modal-create__tags li + li {
+	margin-left: 20px;
+}
+
+.modal-create__props {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 17px;
+	color: black;
+	margin-bottom: 30px;
+}
+
+.modal-create__props div {
+	display: inline;
+}
+
+.modal-create__props span {
+	margin-right: 30px;
+}
+
+.modal-create__film p {
+	font-size: 17px;
+	color: black;
+	max-width: 520px;
+}
+
+.model-create__seances {
+	margin-left: 20px;
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.model-create__seances-item h3 {
+	font-size: 20px;
+	color: black;
+	margin-bottom: 16px;
+}
+
+.model-create__card {
+	border: 1px solid rgba(120, 120, 128, 0.2);
+	border-radius: 16px;
+	padding: 20px;
+	min-width: 372px;
+}
+
+.model-create__seances-item + .model-create__seances-item {
+	margin-top: 20px;
+}
+
+.model-create__card button {
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	background: #fff;
+	border-radius: 16px;
+	border: none;
+	line-height: 32px;
+	font-size: 26px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	position: relative;
+}
+
+.model-create__card span {
+	font-size: 13px;
+	line-height: 16px;
+	color: rgba(60, 60, 67, 0.6);
+}
+
+.model-create__card div {
+	color: #fff;
+	position: absolute;
+	font-size: 13px;
+	background-color: #bd257f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 16px;
+	width: 25px;
+	top: 0;
+	right: 0;
+}
+
+.modal-create__view {
+	/* display: flex; */
+	display: none;
+}
+
+.modal-create__hall {
+	border: 1px solid grey;
+	border-radius: 16px;
+	padding: 13px;
+	margin-right: 16px;
+}
+
+.modal-create__hall-header {
+	background: #fff;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 16px;
+	font-weight: 600;
+	height: 56px;
+	border-radius: 16px;
+	margin-bottom: 15px;
+}
+
+.modal-create__tickets {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.modal-create__tickets div {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	background-color: #fff;
+	border-radius: 1.5rem;
+	height: 1.75rem;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	font-size: 15px;
+}
+
+.modal-create__tickets .circle {
+	margin-right: 0.5rem;
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	display: block;
+}
+
+.modal-create__tickets .circle.normal {
+	background-color: rgb(125, 177, 229);
+}
+
+.modal-create__tickets .circle.vip {
+	background-color: #bd257f;
+}
+
+.modal-create__tickets .circle.saled {
+	background-color: rgba(128, 128, 128, 0.25);
+}
+
+.modal-create__tickets div + div {
+	margin-left: 10px;
+}
+
+.modal-create__hall-header span {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.modal-create__hall-view {
+	display: flex;
+	justify-content: center;
+}
+
+.modal-create__nums div {
+	line-height: 30px;
+}
+
+.modal-create__nums div + div {
+	margin-top: 2px;
+}
+
+.modal-create__seats {
+	margin: 0 15px;
+}
+
+.modal-create__row {
+	display: flex;
+	align-items: center;
+}
+
+.modal-create__seat {
+	outline: none;
+	border: none;
+	border-radius: 0.375rem;
+	height: 30px;
+	width: 30px;
+	background-color: rgb(125, 177, 229);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	justify-content: center;
+	font-size: 15px;
+	font-weight: 600px;
+}
+
+.modal-create__seat.vip {
+	background-color: #bd257f;
+}
+
+.modal-create__seat.saled {
+	background-color: rgba(128, 128, 128, 0.25);
+	pointer-events: none;
+}
+
+.modal-create__seat.selected {
+	background-color: rgb(255, 170, 0);
+}
+
+.modal-create__seat + .modal-create__seat {
+	margin-left: 2px;
+}
+
+.modal-create__row + .modal-create__row {
+	margin-top: 2px;
+}
+
+.modal-create__hall-description {
+	position: relative;
+	padding-bottom: 50px;
+	width: 100%;
+}
+
+.modal-create__hall-description h2 {
+	font-size: 22px;
+}
+
+.modal-create__hall-info span {
+	display: block;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: rgba(60, 60, 67, 0.6);
+}
+
+.modal-create__hall-description-tags {
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.modal-create__hall-description-tags span {
+	font-size: 15px;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	border: 1px solid rgba(120, 120, 128, 0.2);
+	border-radius: 10px;
+}
+
+.modal-create__hall-description-tags span + span {
+	margin-left: 15px;
+}
+
+.modal-create__btns {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.modal-create__btns button {
+	outline: none;
+	cursor: pointer;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 1rem;
+	background-color: rgba(120, 120, 128, 0.08);
+	border: none;
+}
+
+.model-create__selected-seats {
+	margin-top: 30px;
+}
+
+.model-create__selected-seats h4 {
+	line-height: 18px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: rgba(60, 60, 67, 0.6);
+	margin-bottom: 10px;
+}
+
+.model-create__selected-seats-tickets {
+	height: 285px;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+.model-create__selected-seat {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	padding: 15px 25px;
+}
+
+.model-create__selected-seat + .model-create__selected-seat {
+	margin-top: 15px;
+}
+
+.model-create__selected-seat div {
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+}
+
+.model-create__selected-seat span {
+	margin-top: 10px;
+	color: rgba(60, 60, 67, 0.6);
+}
+
+.model-create__selected-seat button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	fill: grey;
+}
+
+.model-create__selected-seat svg {
+	fill: grey;
+	height: 30px;
+}
+
+.model-create__pay {
+	display: none;
+}
+
+.model-create__pay h4 {
+	margin-top: 20px;
+}
+
+.model-create__pay input {
+	font-size: 17px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-radius: 0.75rem;
+	height: 52px;
+	background-color: #fff;
+	border-width: 1px;
+	width: 100%;
+	border-color: rgba(60, 60, 67, 0.18);
+	margin-bottom: 15px;
+	transition: all linear 200ms;
+}
+
+.model-create__pay input:focus {
+	outline: none;
+	border-color: #bd257f;
+}
+
+.modal-create__label {
+	color: rgba(60, 60, 67, 0.6);
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 18px;
+	margin-bottom: 0.5rem;
+}
+
+.modal-create__variants {
+	padding: 0 10px;
+	background-color: #fff;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.modal-create__variant {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.modal-create__variant div {
+	display: flex;
+	align-items: center;
+}
+
+.modal-create__variant svg {
+	fill: #bd257f;
+	width: 16px;
+	height: 16px;
+	display: none;
+}
+
+.modal-create__variant.selected svg {
+	display: block;
+}
+
+.modal-create__variant-img {
+	width: 56px;
+	height: 36px;
+	margin-right: 30px;
+}
+
+.modal-create__selected-seats {
+	height: 190px;
+	overflow-y: auto;
+}
+
+.modal-create_tottal {
+	margin-bottom: 80px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.modal-create .modal-body {
+	display: flex;
+}
+
+.modal-create__poster input {
+	position: absolute;
+	z-index: -1;
+	left: -9000px;
+}
+
+.modal-create__poster {
+	position: relative;
+	cursor: pointer;
+	background-color: #bfbfbf;
+}
+
+.modal-create__poster img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.deleteSeance {
+	width: 20px;
+	margin-left: 25px;
+	margin-top: -6px;
+	background-color: #bd257f;
+}

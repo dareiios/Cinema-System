@@ -1,0 +1,1 @@
+﻿select * from Seats where HallId=1002 and RowNumber=5;

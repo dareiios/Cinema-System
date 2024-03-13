@@ -1,0 +1,31 @@
+.btn {
+	align-items: center;
+	border: 0;
+	border-radius: 16px;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 14px;
+	font-weight: 500;
+	height: 48px;
+	justify-content: center;
+	letter-spacing: 0.5px;
+	padding-left: 32px;
+	padding-right: 32px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.btn-primary {
+	background: #bd257f;
+	color: #fff;
+	border: 1px solid #bd257f;
+}
+
+.btn-primary:hover {
+	background: transparent;
+	color: #bd257f;
+	border: 1px solid #bd257f;
+}

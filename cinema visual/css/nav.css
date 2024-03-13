@@ -1,0 +1,38 @@
+.navbar {
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.navbar-brand svg {
+	fill: #fff;
+	height: 40px;
+	pointer-events: none;
+	width: 160px;
+}
+
+.navbar-collapse {
+	margin-right: 110px;
+}
+
+.login_data {
+	display: none;
+}
+
+.btn-account {
+	color: white;
+	border: 1px solid white;
+	border-radius: 12px;
+}
+
+.btn-account i {
+	margin-right: 10px;
+	box-shadow: none !important;
+}
+
+.btn-account:focus {
+	box-shadow: none !important;
+}
+
+.btn-account:hover {
+	color: #ccc;
+}

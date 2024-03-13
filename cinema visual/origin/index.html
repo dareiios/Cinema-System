@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/films.css" />
+		<link rel="stylesheet" href="./css/btn-group.css" />
+		<link rel="stylesheet" href="./css/promo.css" />
+		<link rel="stylesheet" href="./css/btns.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/carousel-promo.css" />
+		<link rel="stylesheet" href="./css/modal-buy.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid justify-content-between">
+				<a class="navbar-brand" href="/index.html"
+					><svg
+						width="160"
+						height="40"
+						viewBox="0 0 160 40"
+						class="IconBase"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clip-path="url(#clip0)" fill-rule="evenodd" clip-rule="evenodd">
+							<path
+								d="M3.355 36.196a.98.98 0 0 0-.413-.666 1.049 1.049 0 0 0-.78-.18C.934 35.35.49 36.417.49 37.46c0 1.046.444 2.14 1.693 2.14.276.024.552-.05.775-.208.224-.158.382-.39.443-.651h.49c-.082.386-.31.728-.637.96a1.68 1.68 0 0 1-1.138.3C.599 40 0 38.806 0 37.5c0-1.595.805-2.53 2.183-2.53.424-.02.842.1 1.187.34a1.2 1.2 0 0 1 .336.395c.081.153.127.322.134.495h-.516l.03-.005zm7.272-1.146h2.993v.38h-2.544v1.776h2.446v.375h-2.446v1.96h2.647v.39h-3.096v-4.88zm11.14.38h-1.63v-.38h3.68v.38h-1.6v4.5h-.45v-4.5zm10.323 1.776h-1.23V35.05h-.449v4.88h1.682c1.033 0 1.647-.5 1.647-1.365s-.63-1.36-1.652-1.36zm-.13 2.335h-1.099v-1.945h1.104c.852 0 1.275.325 1.275.97s-.407.975-1.275.975h-.005zm15.169-4.491h.47v2.156l2.234-2.155h.583l-2.327 2.2 2.539 2.68h-.62l-2.41-2.55v2.55h-.47v-4.88zm13.251 4.88V35.6h-.025l-2.668 4.33h-.511v-4.88h.454v4.25h.02l2.612-4.25h.573v4.88h-.454zm7.514-4.88h.455v2.156h2.75V35.05h.454v4.88H71.1v-2.335h-2.75v2.335h-.455v-4.88zm12.729-.097c-1.399 0-2.225.935-2.225 2.5 0 1.365.661 2.5 2.225 2.5 1.563 0 2.255-1.115 2.255-2.5s-.686-2.5-2.255-2.5zm.025 4.65c-1.093 0-1.764-.825-1.764-2.16 0-1.335.686-2.1 1.764-2.1 1.08 0 1.72.81 1.714 2.135-.005 1.325-.65 2.13-1.713 2.13v-.005zM90.68 35.43h-1.625v-.38h3.674v.38h-1.594v4.5h-.455v-4.5zm8.65-.38h2.993v.38h-2.544v1.776h2.446v.375h-2.446v1.96h2.642v.39h-3.09v-4.88zm12.051 0h-.516l-1.982 4.88h.464l.516-1.34h2.503l.542 1.34h.49l-2.017-4.88zm-1.394 3.176l1.115-2.765 1.084 2.765h-2.199zm10.548-2.796h-1.631v-.38h3.685v.38h-1.6v4.5h-.454v-4.5zm11.317-.14a2.117 2.117 0 0 0-1.259-.24h-1.404v4.88h.429v-2.145h.975c.479.041.96-.06 1.378-.29a1.32 1.32 0 0 0 .392-.48c.09-.188.132-.393.124-.6a1.216 1.216 0 0 0-.157-.647 1.27 1.27 0 0 0-.478-.478zm-.598 2.06a3.192 3.192 0 0 1-.656.045h-.98V35.43h1.104c.702 0 1.28.215 1.28 1a.846.846 0 0 1-.187.602.896.896 0 0 1-.561.318zm9.981-2.397c-1.394 0-2.219.935-2.219 2.5 0 1.365.66 2.5 2.219 2.5 1.558 0 2.234-1.07 2.234-2.455s-.655-2.545-2.234-2.545zm0 4.65c-1.084 0-1.75-.825-1.75-2.16 0-1.335.671-2.1 1.75-2.1 1.078 0 1.723.81 1.723 2.135 0 1.325-.629 2.13-1.697 2.13l-.026-.005zm11.396-2.225c.248-.055.472-.185.638-.371a1.131 1.131 0 0 0 .116-1.367 1.195 1.195 0 0 0-.568-.467 2.55 2.55 0 0 0-1.032-.125h-1.404v4.88h1.404a2.32 2.32 0 0 0 1.61-.435c.13-.111.234-.25.303-.404a1.11 1.11 0 0 0 .099-.49 1.2 1.2 0 0 0-.335-.833 1.276 1.276 0 0 0-.831-.388zm-1.822-1.955h1.234a.92.92 0 0 1 .714.196c.097.08.176.18.231.291a.875.875 0 0 1-.101.919.922.922 0 0 1-.509.324 1.97 1.97 0 0 1-.464.045h-1.11v-1.77l.005-.005zm1.703 4.045a2.483 2.483 0 0 1-.784.065h-.919v-1.94h1.187a1.29 1.29 0 0 1 1.032.31.92.92 0 0 1 .043 1.232.99.99 0 0 1-.564.338l.005-.005zM50.23 10.251c2.198.15 4.334.355 6.466.5v19.32h-6.467v-7.155l-4.262-.135v7.29c-2.199 0-4.33 0-6.467-.065V9.156c2.137.205 4.268.5 6.467.69v7l4.262.21v-6.805zM12.51 16.5c.924-1.86 4.687-8.945 5.677-10.67-2.477-.5-4.97-.96-7.38-1.445-.645 1.5-3.344 7.845-3.984 9.5l-.067-.065V3.445C4.646 2.96 2.426 2.5.295 1.93v28h6.461V18.725h.067c.64 1.925 3.412 9.43 4.129 11.21 2.632 0 5.192.07 7.741.07-1.068-2.205-5.16-11.15-6.193-13.5l.01-.005zm12.432 6.76V7c-1.915-.27-3.768-.62-5.61-.96V30h9.444c.573-2.68 2.704-13.21 3.272-15.83V30h5.625V8.95c-3.194-.5-6.394-.89-9.66-1.38-.517 2.55-2.488 13-3.056 15.69h-.015zm64.638-1.802h-.082c-.34-1.705-1.842-8.59-2.198-10.245-3.195.075-6.322.145-9.517.145v18.71h5.538v-14.72h.134c.516 2.405 2.632 12.245 3.2 14.72h5.393c.516-2.5 2.704-12.585 3.272-15.135h.067v15.135h5.831v-19.67c-3.096.27-6.327.47-9.526.62-.351 1.72-1.776 8.74-2.122 10.445l.01-.005zm61.012 1.322a3.703 3.703 0 0 1-2.416-.62 5.509 5.509 0 0 1-1.61-2.205 10.641 10.641 0 0 1-.567-3.645 9.63 9.63 0 0 1 .634-3.645 6.276 6.276 0 0 1 1.719-2.55 5.68 5.68 0 0 1 2.477-1.24 6.566 6.566 0 0 1 3.2.55V2c-.996-.07-1.853-.07-2.421-.07a8.61 8.61 0 0 0-2.126.265c-1.412.342-2.75.928-3.948 1.73A13.55 13.55 0 0 0 142.35 7a14.19 14.19 0 0 0-2.064 4.06c-.073.075-.073.21-.145.275a19.408 19.408 0 0 0-.774 5.5 19.173 19.173 0 0 0 .779 5.665c.014.147.063.29.145.415a10.315 10.315 0 0 0 1.992 3.72 8.371 8.371 0 0 0 3.194 2.545 9.62 9.62 0 0 0 3.979.9 10.61 10.61 0 0 0 4.619-1.175v-7.37a7.539 7.539 0 0 1-3.478 1.245h-.005zm-74.645-6.194a8.01 8.01 0 0 0-1.775-3.085 8.401 8.401 0 0 0-2.983-1.86 11.508 11.508 0 0 0-3.907-.69h-.067a11.45 11.45 0 0 0-3.907.415 7.494 7.494 0 0 0-2.988 1.785 7.72 7.72 0 0 0-1.775 3.03 13.26 13.26 0 0 0-.635 4.27c-.022 1.47.192 2.934.635 4.34a7.538 7.538 0 0 0 1.775 3.095 8.728 8.728 0 0 0 2.988 1.925c1.253.433 2.577.643 3.907.62h.067c1.33.01 2.65-.2 3.907-.62a8.365 8.365 0 0 0 2.983-1.86 7.73 7.73 0 0 0 1.775-3c.468-1.355.705-2.776.702-4.205a12.266 12.266 0 0 0-.702-4.16zm-6.276 6.605a4.22 4.22 0 0 1-.712 1.86 2.006 2.006 0 0 1-.744.622 2.077 2.077 0 0 1-.959.208h-.067a2.183 2.183 0 0 1-1.162-.377 2.082 2.082 0 0 1-.758-.933c-.428-.905-.64-2.2-.64-4 0-1.8.212-3.04.64-3.855.14-.385.399-.718.743-.953s.756-.36 1.177-.357c0 .065 0 .065.067.065.991 0 1.703.55 2.064 1.59a10.93 10.93 0 0 1 .568 3.575c.016.857-.056 1.713-.217 2.555zm46.752-14.316c-1.549.15-3.051.35-4.614.5-1.425.205-2.844.345-4.258.5-1.001 3.435-4.975 16.925-5.971 20.225h6.456c.351-1.5 1.001-4.4 1.001-4.4l5.466-.14s.779 2.955 1.135 4.475h6.75c-.99-3.67-4.975-17.785-5.965-21.16zm-6.462 11.84s1.548-5.71 1.848-6.875h.067c.289 1.1 1.847 6.67 1.847 6.67l-3.762.205z"
+							></path>
+							<path
+								d="M134.97 17.21c.919-1.93 5.532-12.05 5.677-12.32a3.626 3.626 0 0 0-.351.066c-2.343.5-4.686.895-6.962 1.38a979.775 979.775 0 0 0-4.046 9.7h-.072V6.95c-2.132.415-4.268.76-6.472 1.04V30h6.472v-9.765h.072c.707 1.57 4.191 9.77 4.191 9.77h7.741s-5.161-10.715-6.234-12.78l-.016-.015zm23.549-15.044a.946.946 0 0 0-.217-.165.634.634 0 0 0 .387-.175.49.49 0 0 0 .134-.325.527.527 0 0 0-.088-.3.442.442 0 0 0-.227-.2 1.465 1.465 0 0 0-.459-.05h-.836v1.895h.397v-.795h.083a.67.67 0 0 1 .201 0 .308.308 0 0 1 .119.08c.077.089.147.182.211.28l.289.415h.475l-.248-.325a2.172 2.172 0 0 0-.221-.335zm-.599-.415h-.31v-.5h.599a.247.247 0 0 1 .15.075.226.226 0 0 1 .077.175.242.242 0 0 1-.041.145.215.215 0 0 1-.114.08c-.119.022-.24.03-.361.025z"
+							></path>
+							<path
+								d="M158.028 0a2.023 2.023 0 0 0-1.103.313 1.924 1.924 0 0 0-.737.855c-.153.35-.195.736-.121 1.108.074.373.26.716.536.986.275.27.628.454 1.012.53a2.04 2.04 0 0 0 1.144-.106c.363-.144.673-.39.891-.705a1.873 1.873 0 0 0-.237-2.413A2.009 2.009 0 0 0 158.028 0zm0 3.435c-.306 0-.605-.088-.86-.253a1.513 1.513 0 0 1-.57-.673 1.456 1.456 0 0 1-.088-.867c.06-.29.207-.558.424-.768a1.56 1.56 0 0 1 .792-.41 1.6 1.6 0 0 1 .895.085c.283.114.525.306.695.553a1.465 1.465 0 0 1-.193 1.893 1.57 1.57 0 0 1-1.095.44z"
+							></path>
+						</g>
+						<defs>
+							<clipPath id="clip0"><path d="M0 0h160v40H0V0z"></path></clipPath>
+						</defs>
+					</svg>
+				</a>
+				<div>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+						<ul class="navbar-nav mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="/index.html">Афиша</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/Halls.html">Залы</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/About.html">О нас</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div></div>
+			</div>
+		</nav>
+
+		<div id="Promos" class="carousel slide carousel-promo" data-bs-ride="carousel" data-interval="300">
+			<div class="carousel-indicators"></div>
+			<div class="carousel-inner"></div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#Promos" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Предыдущий</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#Promos" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Следующий</span>
+			</button>
+		</div>
+
+		<section class="films">
+			<div class="films__nav">
+				<div class="container">
+					<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+						<input
+							type="radio"
+							class="btn-check"
+							name="btnradio"
+							id="btnradio1"
+							autocomplete="off"
+							checked
+						/>
+						<label class="btn btn-group-link" data-type="today" for="btnradio1">Сегодня</label>
+					</div>
+				</div>
+			</div>
+			<div class="films__items container">
+				<div class="row row-cols-1 row-cols-md-4 g-4" id="films">
+					<div class="col">
+						<div class="card films-card">
+							<img
+								src="https://images.kinomax.ru/550/films/6/6407/p_b0e1e86.jpg"
+								class="card-img-top img"
+								alt="..."
+							/>
+							<div class="films-card__footer">
+								<h4 class="films-card__title">Иван Семенов-школьный переполох</h4>
+								<div class="films-card__extantion">
+									<div class="films-card__genre">Драма, Исторический</div>
+									<div class="films-card__format">2D</div>
+								</div>
+							</div>
+							<div class="films-card__tag">Пушкинская карта</div>
+							<div class="film-card-age">16+</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card films-card">
+							<img
+								src="https://images.kinomax.ru/550/films/6/6407/p_b0e1e86.jpg"
+								class="card-img-top img"
+								alt="..."
+							/>
+							<div class="films-card__footer">
+								<h4 class="films-card__title">Иван Семенов-школьный переполох</h4>
+								<div class="films-card__extantion">
+									<div class="films-card__genre">Драма, Исторический</div>
+									<div class="films-card__format">2D</div>
+								</div>
+							</div>
+							<div class="films-card__tag">Пушкинская карта</div>
+							<div class="film-card-age">16+</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card films-card">
+							<img
+								src="https://images.kinomax.ru/550/films/6/6407/p_b0e1e86.jpg"
+								class="card-img-top img"
+								alt="..."
+							/>
+							<div class="films-card__footer">
+								<h4 class="films-card__title">Иван Семенов-школьный переполох</h4>
+								<div class="films-card__extantion">
+									<div class="films-card__genre">Драма, Исторический</div>
+									<div class="films-card__format">2D</div>
+								</div>
+							</div>
+							<div class="films-card__tag">Пушкинская карта</div>
+							<div class="film-card-age">16+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="promo">
+			<div class="container d-flex justify-content-between align-items-center">
+				<div class="promo__content">
+					<h3 class="promo__title">Специальное предложение для школьных групп</h3>
+					<p class="promo__text">
+						Билет в кино от 100 руб. и полный список фильмов, которые можно посмотреть по Пушкинской карте!
+					</p>
+					<button class="btn btn-primary" data-bs-target="#PushkinModal" data-bs-toggle="modal">
+						Узнать больше
+					</button>
+				</div>
+				<img class="promo__img" src="https://images.kinomax.ru/500/b/25/863602_2581.png" />
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="container justify-content-between d-flex">
+					<div class="footer__item">
+						<svg
+							width="160"
+							height="40"
+							viewBox="0 0 160 40"
+							class="IconBase footer__logo"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#clip0)" fill-rule="evenodd" clip-rule="evenodd" fill="white">
+								<path
+									d="M3.355 36.196a.98.98 0 0 0-.413-.666 1.049 1.049 0 0 0-.78-.18C.934 35.35.49 36.417.49 37.46c0 1.046.444 2.14 1.693 2.14.276.024.552-.05.775-.208.224-.158.382-.39.443-.651h.49c-.082.386-.31.728-.637.96a1.68 1.68 0 0 1-1.138.3C.599 40 0 38.806 0 37.5c0-1.595.805-2.53 2.183-2.53.424-.02.842.1 1.187.34a1.2 1.2 0 0 1 .336.395c.081.153.127.322.134.495h-.516l.03-.005zm7.272-1.146h2.993v.38h-2.544v1.776h2.446v.375h-2.446v1.96h2.647v.39h-3.096v-4.88zm11.14.38h-1.63v-.38h3.68v.38h-1.6v4.5h-.45v-4.5zm10.323 1.776h-1.23V35.05h-.449v4.88h1.682c1.033 0 1.647-.5 1.647-1.365s-.63-1.36-1.652-1.36zm-.13 2.335h-1.099v-1.945h1.104c.852 0 1.275.325 1.275.97s-.407.975-1.275.975h-.005zm15.169-4.491h.47v2.156l2.234-2.155h.583l-2.327 2.2 2.539 2.68h-.62l-2.41-2.55v2.55h-.47v-4.88zm13.251 4.88V35.6h-.025l-2.668 4.33h-.511v-4.88h.454v4.25h.02l2.612-4.25h.573v4.88h-.454zm7.514-4.88h.455v2.156h2.75V35.05h.454v4.88H71.1v-2.335h-2.75v2.335h-.455v-4.88zm12.729-.097c-1.399 0-2.225.935-2.225 2.5 0 1.365.661 2.5 2.225 2.5 1.563 0 2.255-1.115 2.255-2.5s-.686-2.5-2.255-2.5zm.025 4.65c-1.093 0-1.764-.825-1.764-2.16 0-1.335.686-2.1 1.764-2.1 1.08 0 1.72.81 1.714 2.135-.005 1.325-.65 2.13-1.713 2.13v-.005zM90.68 35.43h-1.625v-.38h3.674v.38h-1.594v4.5h-.455v-4.5zm8.65-.38h2.993v.38h-2.544v1.776h2.446v.375h-2.446v1.96h2.642v.39h-3.09v-4.88zm12.051 0h-.516l-1.982 4.88h.464l.516-1.34h2.503l.542 1.34h.49l-2.017-4.88zm-1.394 3.176l1.115-2.765 1.084 2.765h-2.199zm10.548-2.796h-1.631v-.38h3.685v.38h-1.6v4.5h-.454v-4.5zm11.317-.14a2.117 2.117 0 0 0-1.259-.24h-1.404v4.88h.429v-2.145h.975c.479.041.96-.06 1.378-.29a1.32 1.32 0 0 0 .392-.48c.09-.188.132-.393.124-.6a1.216 1.216 0 0 0-.157-.647 1.27 1.27 0 0 0-.478-.478zm-.598 2.06a3.192 3.192 0 0 1-.656.045h-.98V35.43h1.104c.702 0 1.28.215 1.28 1a.846.846 0 0 1-.187.602.896.896 0 0 1-.561.318zm9.981-2.397c-1.394 0-2.219.935-2.219 2.5 0 1.365.66 2.5 2.219 2.5 1.558 0 2.234-1.07 2.234-2.455s-.655-2.545-2.234-2.545zm0 4.65c-1.084 0-1.75-.825-1.75-2.16 0-1.335.671-2.1 1.75-2.1 1.078 0 1.723.81 1.723 2.135 0 1.325-.629 2.13-1.697 2.13l-.026-.005zm11.396-2.225c.248-.055.472-.185.638-.371a1.131 1.131 0 0 0 .116-1.367 1.195 1.195 0 0 0-.568-.467 2.55 2.55 0 0 0-1.032-.125h-1.404v4.88h1.404a2.32 2.32 0 0 0 1.61-.435c.13-.111.234-.25.303-.404a1.11 1.11 0 0 0 .099-.49 1.2 1.2 0 0 0-.335-.833 1.276 1.276 0 0 0-.831-.388zm-1.822-1.955h1.234a.92.92 0 0 1 .714.196c.097.08.176.18.231.291a.875.875 0 0 1-.101.919.922.922 0 0 1-.509.324 1.97 1.97 0 0 1-.464.045h-1.11v-1.77l.005-.005zm1.703 4.045a2.483 2.483 0 0 1-.784.065h-.919v-1.94h1.187a1.29 1.29 0 0 1 1.032.31.92.92 0 0 1 .043 1.232.99.99 0 0 1-.564.338l.005-.005zM50.23 10.251c2.198.15 4.334.355 6.466.5v19.32h-6.467v-7.155l-4.262-.135v7.29c-2.199 0-4.33 0-6.467-.065V9.156c2.137.205 4.268.5 6.467.69v7l4.262.21v-6.805zM12.51 16.5c.924-1.86 4.687-8.945 5.677-10.67-2.477-.5-4.97-.96-7.38-1.445-.645 1.5-3.344 7.845-3.984 9.5l-.067-.065V3.445C4.646 2.96 2.426 2.5.295 1.93v28h6.461V18.725h.067c.64 1.925 3.412 9.43 4.129 11.21 2.632 0 5.192.07 7.741.07-1.068-2.205-5.16-11.15-6.193-13.5l.01-.005zm12.432 6.76V7c-1.915-.27-3.768-.62-5.61-.96V30h9.444c.573-2.68 2.704-13.21 3.272-15.83V30h5.625V8.95c-3.194-.5-6.394-.89-9.66-1.38-.517 2.55-2.488 13-3.056 15.69h-.015zm64.638-1.802h-.082c-.34-1.705-1.842-8.59-2.198-10.245-3.195.075-6.322.145-9.517.145v18.71h5.538v-14.72h.134c.516 2.405 2.632 12.245 3.2 14.72h5.393c.516-2.5 2.704-12.585 3.272-15.135h.067v15.135h5.831v-19.67c-3.096.27-6.327.47-9.526.62-.351 1.72-1.776 8.74-2.122 10.445l.01-.005zm61.012 1.322a3.703 3.703 0 0 1-2.416-.62 5.509 5.509 0 0 1-1.61-2.205 10.641 10.641 0 0 1-.567-3.645 9.63 9.63 0 0 1 .634-3.645 6.276 6.276 0 0 1 1.719-2.55 5.68 5.68 0 0 1 2.477-1.24 6.566 6.566 0 0 1 3.2.55V2c-.996-.07-1.853-.07-2.421-.07a8.61 8.61 0 0 0-2.126.265c-1.412.342-2.75.928-3.948 1.73A13.55 13.55 0 0 0 142.35 7a14.19 14.19 0 0 0-2.064 4.06c-.073.075-.073.21-.145.275a19.408 19.408 0 0 0-.774 5.5 19.173 19.173 0 0 0 .779 5.665c.014.147.063.29.145.415a10.315 10.315 0 0 0 1.992 3.72 8.371 8.371 0 0 0 3.194 2.545 9.62 9.62 0 0 0 3.979.9 10.61 10.61 0 0 0 4.619-1.175v-7.37a7.539 7.539 0 0 1-3.478 1.245h-.005zm-74.645-6.194a8.01 8.01 0 0 0-1.775-3.085 8.401 8.401 0 0 0-2.983-1.86 11.508 11.508 0 0 0-3.907-.69h-.067a11.45 11.45 0 0 0-3.907.415 7.494 7.494 0 0 0-2.988 1.785 7.72 7.72 0 0 0-1.775 3.03 13.26 13.26 0 0 0-.635 4.27c-.022 1.47.192 2.934.635 4.34a7.538 7.538 0 0 0 1.775 3.095 8.728 8.728 0 0 0 2.988 1.925c1.253.433 2.577.643 3.907.62h.067c1.33.01 2.65-.2 3.907-.62a8.365 8.365 0 0 0 2.983-1.86 7.73 7.73 0 0 0 1.775-3c.468-1.355.705-2.776.702-4.205a12.266 12.266 0 0 0-.702-4.16zm-6.276 6.605a4.22 4.22 0 0 1-.712 1.86 2.006 2.006 0 0 1-.744.622 2.077 2.077 0 0 1-.959.208h-.067a2.183 2.183 0 0 1-1.162-.377 2.082 2.082 0 0 1-.758-.933c-.428-.905-.64-2.2-.64-4 0-1.8.212-3.04.64-3.855.14-.385.399-.718.743-.953s.756-.36 1.177-.357c0 .065 0 .065.067.065.991 0 1.703.55 2.064 1.59a10.93 10.93 0 0 1 .568 3.575c.016.857-.056 1.713-.217 2.555zm46.752-14.316c-1.549.15-3.051.35-4.614.5-1.425.205-2.844.345-4.258.5-1.001 3.435-4.975 16.925-5.971 20.225h6.456c.351-1.5 1.001-4.4 1.001-4.4l5.466-.14s.779 2.955 1.135 4.475h6.75c-.99-3.67-4.975-17.785-5.965-21.16zm-6.462 11.84s1.548-5.71 1.848-6.875h.067c.289 1.1 1.847 6.67 1.847 6.67l-3.762.205z"
+								></path>
+								<path
+									d="M134.97 17.21c.919-1.93 5.532-12.05 5.677-12.32a3.626 3.626 0 0 0-.351.066c-2.343.5-4.686.895-6.962 1.38a979.775 979.775 0 0 0-4.046 9.7h-.072V6.95c-2.132.415-4.268.76-6.472 1.04V30h6.472v-9.765h.072c.707 1.57 4.191 9.77 4.191 9.77h7.741s-5.161-10.715-6.234-12.78l-.016-.015zm23.549-15.044a.946.946 0 0 0-.217-.165.634.634 0 0 0 .387-.175.49.49 0 0 0 .134-.325.527.527 0 0 0-.088-.3.442.442 0 0 0-.227-.2 1.465 1.465 0 0 0-.459-.05h-.836v1.895h.397v-.795h.083a.67.67 0 0 1 .201 0 .308.308 0 0 1 .119.08c.077.089.147.182.211.28l.289.415h.475l-.248-.325a2.172 2.172 0 0 0-.221-.335zm-.599-.415h-.31v-.5h.599a.247.247 0 0 1 .15.075.226.226 0 0 1 .077.175.242.242 0 0 1-.041.145.215.215 0 0 1-.114.08c-.119.022-.24.03-.361.025z"
+								></path>
+								<path
+									d="M158.028 0a2.023 2.023 0 0 0-1.103.313 1.924 1.924 0 0 0-.737.855c-.153.35-.195.736-.121 1.108.074.373.26.716.536.986.275.27.628.454 1.012.53a2.04 2.04 0 0 0 1.144-.106c.363-.144.673-.39.891-.705a1.873 1.873 0 0 0-.237-2.413A2.009 2.009 0 0 0 158.028 0zm0 3.435c-.306 0-.605-.088-.86-.253a1.513 1.513 0 0 1-.57-.673 1.456 1.456 0 0 1-.088-.867c.06-.29.207-.558.424-.768a1.56 1.56 0 0 1 .792-.41 1.6 1.6 0 0 1 .895.085c.283.114.525.306.695.553a1.465 1.465 0 0 1-.193 1.893 1.57 1.57 0 0 1-1.095.44z"
+								></path>
+							</g>
+							<defs>
+								<clipPath id="clip0"><path d="M0 0h160v40H0V0z"></path></clipPath>
+							</defs>
+						</svg>
+						<div class="footer__menu">
+							<div class="footer__menu-group">
+								<h4>Для клиентов</h4>
+								<ul>
+									<li><a href="/About.html">О нас</a></li>
+									<li><a href="/index.html">Сегодня в кино</a></li>
+									<li><a href="/Halls.html">Залы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__social">
+							<a class="footer__social-item" href="#">
+								<svg
+									width="21"
+									height="12"
+									viewBox="0 0 21 12"
+									class="IconBase"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.81794 11.2029H11.0174C11.0174 11.2029 11.3797 11.1638 11.5647 10.9678C11.735 10.7879 11.7295 10.4501 11.7295 10.4501C11.7295 10.4501 11.7061 8.86843 12.4531 8.63552C13.1894 8.40609 14.135 10.1642 15.1372 10.8401C15.8951 11.3517 16.471 11.2396 16.471 11.2396L19.1508 11.2029C19.1508 11.2029 20.5527 11.118 19.888 10.0349C19.8335 9.94625 19.5009 9.2336 17.8955 7.7692C16.2152 6.23654 16.4402 6.48444 18.4643 3.83327C19.697 2.21869 20.1899 1.23297 20.0359 0.810785C19.8891 0.408679 18.9825 0.514961 18.9825 0.514961L15.9651 0.533433C15.9651 0.533433 15.7415 0.503449 15.5756 0.600897C15.4135 0.696471 15.3091 0.919209 15.3091 0.919209C15.3091 0.919209 14.8316 2.16863 14.1947 3.23119C12.8511 5.47329 12.3139 5.59162 12.0943 5.45241C11.5835 5.12794 11.711 4.14891 11.711 3.45339C11.711 1.28062 12.0464 0.374679 11.058 0.140162C10.73 0.0622572 10.4886 0.0108561 9.64986 0.00255699C8.57324 -0.00841928 7.66199 0.00576954 7.14603 0.254208C6.80277 0.419387 6.53798 0.787494 6.69925 0.808643C6.89867 0.834879 7.35034 0.928311 7.5898 1.24876C7.899 1.66211 7.8881 2.59055 7.8881 2.59055C7.8881 2.59055 8.06572 5.14828 7.4732 5.46606C7.06648 5.68398 6.50856 5.23904 5.31072 3.20495C4.69695 2.16301 4.23356 1.0113 4.23356 1.0113C4.23356 1.0113 4.14421 0.796061 3.98484 0.680944C3.79142 0.541465 3.52118 0.497024 3.52118 0.497024L0.65394 0.515497C0.65394 0.515497 0.223513 0.527276 0.0655087 0.711195C-0.075061 0.874769 0.0543394 1.21316 0.0543394 1.21316C0.0543394 1.21316 2.2991 6.37415 4.84079 8.97499C7.17136 11.3595 9.81794 11.2029 9.81794 11.2029Z"
+									></path>
+								</svg>
+							</a>
+							<a class="footer__social-item" href="#">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 54 48"
+									class="IconBase"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z"
+									></path>
+								</svg>
+							</a>
+							<a class="footer__social-item" href="#">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 512 512"
+									class="IconBase"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g>
+										<g>
+											<path
+												d="M265,96c65.3,0,118.7,1.1,168.1,3.3l0.7,0h0.7c23.1,0,42,22,42,49.1v1.1l0.1,1.1c2.3,34,3.4,69.3,3.4,104.9v0v0    c0.1,35.6-1.1,70.9-3.4,104.9l-0.1,1.1v1.1c0,13.8-4.7,26.6-13.4,36.1c-7.8,8.6-18,13.4-28.6,13.4h-0.8l-0.8,0    c-52.9,2.5-108.8,3.8-166.4,3.8c-3.5,0-7.1,0-10.6,0H256h-0.1c-3.6,0-7.2,0-10.8,0c-57.8,0-113.7-1.3-166.2-3.7l-0.8,0h-0.8    c-10.6,0-20.7-4.8-28.5-13.4c-8.6-9.5-13.4-22.3-13.4-36.1v-1.1l-0.1-1.1c-2.4-34.1-3.5-69.4-3.3-104.7v-0.1v-0.1    c-0.1-35.3,1-70.5,3.3-104.6l0.1-1.1v-1.1c0-27.2,18.8-49.3,41.9-49.3H78l0.7,0c49.5-2.3,102.9-3.3,168.2-3.3h9H265 M265,64    c-3,0-6,0-9,0s-6,0-9,0c-57.6,0-114.2,0.8-169.6,3.3c-40.8,0-73.9,36.3-73.9,81.3C1,184.4-0.1,220,0,255.7    c-0.1,35.7,0.9,71.3,3.4,107c0,45,33.1,81.6,73.9,81.6c54.8,2.6,110.7,3.8,167.8,3.8c3.6,0,7.3,0,10.9,0c3.6,0,7.2,0,10.7,0    c57.1,0,113-1.2,167.9-3.8c40.9,0,74-36.6,74-81.6c2.4-35.7,3.5-71.4,3.4-107.1c0.1-35.7-1-71.3-3.4-107.1c0-45-33.1-81.1-74-81.1    C379.2,64.8,322.7,64,265,64L265,64z"
+											></path>
+										</g>
+										<g><path d="M207,353.8V157.4l145,98.2L207,353.8z"></path></g>
+									</g>
+								</svg>
+							</a>
+						</div>
+						<div class="footer__app">
+							<img
+								class="footer__phone"
+								src="https://kinomax.ru/images/footer-mobile-app.f737541e882b923f460e.png"
+							/>
+							<div>
+								<svg
+									width="48"
+									height="48"
+									viewBox="0 0 48 48"
+									fill="none"
+									class="IconBase"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="48" height="48" rx="4" fill="url(#pattern0)"></rect>
+									<defs>
+										<pattern
+											id="pattern0"
+											patternContentUnits="objectBoundingBox"
+											width="1"
+											height="1"
+										>
+											<use xlink:href="#image0" transform="scale(.00556)"></use>
+										</pattern>
+										<image
+											id="image0"
+											width="180"
+											height="180"
+											xlink:href="data:image/png;base64,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"
+										></image>
+									</defs>
+								</svg>
+								<h4>Приложение «Киномакс»</h4>
+								<p>Загружайте и покупайте билеты онлайн.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">© 2006-2023 Сеть кинотеатров «Киномакс» – все права защищены.</div>
+		</footer>
+
+		<!-- Modal -->
+		<div class="modal fade" id="PushkinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Пушкинская карта</h5>
+					</div>
+					<div class="modal-body">тут будет текст</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно -->
+		<div
+			class="modal fade modal-buy"
+			id="BuyModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-buy__status">
+							<div class="modal-buy__status-item active" data-name="seance">
+								<div class="modal-buy__status-img">
+									<svg
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										class="cb-w-6 cb-h-6"
+									>
+										<path
+											d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17316C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8078C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C21.997 9.34877 20.9424 6.807 19.0677 4.93229C17.193 3.05759 14.6512 2.00304 12 2ZM15.5527 14.8945L11.5527 12.8945C11.3866 12.8114 11.2469 12.6837 11.1493 12.5258C11.0517 12.3678 11 12.1857 11 12V7C11 6.73478 11.1054 6.48043 11.2929 6.29289C11.4804 6.10536 11.7348 6 12 6C12.2652 6 12.5196 6.10536 12.7071 6.29289C12.8946 6.48043 13 6.73478 13 7V11.3818L16.4473 13.1054C16.6846 13.224 16.865 13.432 16.9488 13.6837C17.0327 13.9353 17.0132 14.21 16.8946 14.4472C16.7759 14.6845 16.5679 14.8649 16.3163 14.9488C16.0646 15.0327 15.79 15.0131 15.5527 14.8945Z"
+										></path>
+									</svg>
+								</div>
+								Сеанс
+							</div>
+							<div class="modal-buy__status-item" data-name="seats">
+								<div class="modal-buy__status-img">
+									<svg
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										class="cb-w-6 cb-h-6"
+									>
+										<path
+											d="M4 6C4 4.89543 4.89543 4 6 4H9C10.1046 4 11 4.89543 11 6V9C11 10.1046 10.1046 11 9 11H6C4.89543 11 4 10.1046 4 9V6Z"
+										></path>
+										<path
+											d="M4 15C4 13.8954 4.89543 13 6 13H9C10.1046 13 11 13.8954 11 15V18C11 19.1046 10.1046 20 9 20H6C4.89543 20 4 19.1046 4 18V15Z"
+										></path>
+										<path
+											d="M13 6C13 4.89543 13.8954 4 15 4H18C19.1046 4 20 4.89543 20 6V9C20 10.1046 19.1046 11 18 11H15C13.8954 11 13 10.1046 13 9V6Z"
+										></path>
+										<path
+											opacity="0.5"
+											d="M13 15C13 13.8954 13.8954 13 15 13H18C19.1046 13 20 13.8954 20 15V18C20 19.1046 19.1046 20 18 20H15C13.8954 20 13 19.1046 13 18V15Z"
+										></path>
+									</svg>
+								</div>
+								Места
+							</div>
+							<div class="modal-buy__status-item" data-name="buy">
+								<div class="modal-buy__status-img">
+									<svg
+										viewBox="0 0 24 24"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										class="cb-w-6 cb-h-6"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M3 8C3 6.34315 4.34315 5 6 5H18C19.6569 5 21 6.34315 21 8V9H3V8ZM3 16V11.5H21V16C21 17.6569 19.6569 19 18 19H6C4.34315 19 3 17.6569 3 16ZM12.5 15.25C12.5 14.5596 11.9404 14 11.25 14H6.75C6.05964 14 5.5 14.5596 5.5 15.25C5.5 15.9404 6.05964 16.5 6.75 16.5H11.25C11.9404 16.5 12.5 15.9404 12.5 15.25Z"
+										></path>
+									</svg>
+								</div>
+								Оплата
+							</div>
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-buy__ticketsoldstatus">
+							<h2>Поздравляем с покупкой bилета!</h2>
+						</div>
+						<div class="modal-buy__info">
+							<img
+								class="modal-buy__poster"
+								src="https://cinema5.cinemabox.team/api/v1/movies/1000000000083/poster"
+								alt=""
+							/>
+							<div class="modal-buy__film">
+								<h2>Аватар: Путь воды предсеанс. обсл. & Три добрых дела</h2>
+								<span>Россия, <span class="modal-buy__duration"> 1 час 36</span> минут</span>
+								<ul class="modal-buy__tags">
+									<li><span class="modal-buy__age-limit">12</span></li>
+									<li>
+										<img
+											src="https://static-site.cinemabox.team/widget/common/assets/pushkinsCard-91f8c162.svg"
+											alt=""
+										/>
+									</li>
+								</ul>
+								<ul class="modal-buy__props">
+									<li>
+										<span> Конец проката </span>
+										<div id="prokatEnd">с 2 марта 2023</div>
+									</li>
+									<li>
+										<span style="margin-right: 36px"> Старт проката </span>
+										<div id="prokatStart">с 2 марта 2023</div>
+									</li>
+									<li>
+										<span style="margin-right: 71px"> Режиссер </span>
+										<div id="director">с 2 марта 2023</div>
+									</li>
+								</ul>
+								<p id="descriptionFilm">
+									Генералу Хадякову стукнуло 60 лет, и он решает отпраздновать юбилей не на Патриках,
+									а в настоящей русской деревне — с полным погружением, праздничной трапезой, баней,
+									рыбалкой и деревенским спа. Приглашены все любимые герои, но праздник идёт не по
+									плану.Жители Патриков умудряются настроить против себя местных жителей, переругаться
+									между собой и остаться без пропитания.
+								</p>
+							</div>
+							<div class="model-buy__seances">
+								<div class="model-buy__seances-item">
+									<h3>сегодня, 12 марта</h3>
+									<div class="model-buy__card">
+										<button>
+											<div>3D</div>
+											14:00
+											<span>360 р</span>
+										</button>
+									</div>
+								</div>
+								<div class="model-buy__seances-item">
+									<h3>сегодня, 12 марта</h3>
+									<div class="model-buy__card">
+										<button>
+											<div>3D</div>
+											14:00
+											<span>360 р</span>
+										</button>
+									</div>
+								</div>
+								<div class="model-buy__seances-item">
+									<h3>сегодня, 12 марта</h3>
+									<div class="model-buy__card">
+										<button>
+											<div>3D</div>
+											14:00
+											<span>360 р</span>
+										</button>
+									</div>
+								</div>
+								<div class="model-buy__seances-item">
+									<h3>сегодня, 12 марта</h3>
+									<div class="model-buy__card">
+										<button>
+											<div>3D</div>
+											14:00
+											<span>360 р</span>
+										</button>
+									</div>
+								</div>
+								<div class="model-buy__seances-item">
+									<h3>сегодня, 12 марта</h3>
+									<div class="model-buy__card">
+										<button>
+											<div>3D</div>
+											14:00
+											<span>360 р</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="modalByuView" class="modal-buy__view">
+							<div class="modal-buy__hall">
+								<div class="modal-buy__hall-header">
+									<label id="time">16:40</label>
+									<span id="seanceDate">сегодня, 26 марта</span>
+								</div>
+								<div class="modal-buy__monitor">
+									<svg
+										viewBox="0 0 1018 191"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+										class="cb-text-[color:var(--labelPrimary)]"
+										style="width: 663px"
+									>
+										<path
+											d="M996.601 190.235L1016.96 80.252C1016.96 80.252 820.96 1 509 1C190.221 1 1 80.2523 1 80.2523L21.3591 190.235H996.601Z"
+											fill="url(#scheme-screen)"
+											fill-opacity=".5"
+										></path>
+										<path
+											d="M1016.96 80.252C1016.96 80.252 820.96 1 509 1C190.221 1 1 80.2523 1 80.2523"
+											stroke="currentColor"
+											stroke-width="2"
+										></path>
+										<defs>
+											<linearGradient
+												id="scheme-screen"
+												x1="508.98"
+												y1="-250"
+												x2="508.98"
+												y2="191.852"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="currentColor" stop-opacity=".5"></stop>
+												<stop offset="1" stop-opacity="0"></stop>
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+								<div class="modal-buy__hall-view">
+									<div class="modal-buy__nums">
+										<div>1</div>
+										<div>2</div>
+										<div>3</div>
+										<div>4</div>
+										<div>5</div>
+										<div>6</div>
+										<div>7</div>
+										<div>8</div>
+										<div>9</div>
+										<div>10</div>
+									</div>
+									<div class="modal-buy__seats">
+										<div class="modal-buy__row">
+											<button class="modal-buy__seat"></button>
+											<button class="modal-buy__seat saled"></button
+											><button class="modal-buy__seat vip"></button
+											><button
+												class="modal-buy__seat"
+												data-row="1"
+												data-number="4"
+												data-price="350"
+											></button
+											><button
+												class="modal-buy__seat"
+												data-row="1"
+												data-number="5"
+												data-price="350"
+											></button
+											><button
+												class="modal-buy__seat"
+												data-row="1"
+												data-number="6"
+												data-price="350"
+											></button>
+										</div>
+									</div>
+									<div class="modal-buy__nums">
+										<div>1</div>
+										<div>2</div>
+										<div>3</div>
+										<div>4</div>
+										<div>5</div>
+										<div>6</div>
+										<div>7</div>
+										<div>8</div>
+										<div>9</div>
+										<div>10</div>
+									</div>
+								</div>
+								<div class="modal-buy__tickets">
+									<div><span class="circle normal"></span> 350р</div>
+									<div><span class="circle vip"></span> 370р</div>
+									<div><span class="circle saled"></span> Занято</div>
+								</div>
+							</div>
+							<div class="modal-buy__hall-description">
+								<h2 id="seanceTitle">Аватар: Путь воды предсеанс. обсл. & Три добрых дела</h2>
+								<div class="modal-buy__hall-info">
+									<span> Длительность: <label id="seanceDuration">3 часа 25 минут</label> </span>
+									<span> Реклама: <label id="seancePromoDuration">4 минуты</label> </span>
+								</div>
+								<div class="modal-buy__hall-description-tags">
+									<span id="seanceAge">12+</span>
+									<span id="senaceFormat">3D</span>
+									<span id="seanceHall">Зал 2</span>
+								</div>
+								<div>
+									<div class="model-buy__selected-seats">
+										<h4>выбранные места</h4>
+										<div class="model-buy__selected-seats-tickets"></div>
+									</div>
+									<div class="model-buy__pay">
+										<h4>Введите данные</h4>
+										<input id="email" type="text" placeholder="Электронная почта" />
+										<div class="modal-buy__label">Выберете способ oплаты</div>
+										<div class="modal-buy__variants">
+											<div class="modal-buy__variant">
+												<div>
+													<img
+														class="modal-buy__variant-img"
+														src="https://static-site.cinemabox.team/widget/common/assets/bankCard-bed5424d.svg"
+														alt=""
+													/>Банковаская карта
+												</div>
+
+												<svg
+													viewBox="0 0 18 17"
+													xmlns="http://www.w3.org/2000/svg"
+													fill="currentColor"
+													class="m:cb-w-3 d:cb-w-4 cb-text-[color:var(--mainLevel1)]"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M16.7004 0.654089C17.2123 0.981346 17.3619 1.66156 17.0346 2.1734L8.02993 16.2569C7.83828 16.5567 7.51349 16.7452 7.15816 16.763C6.80283 16.7808 6.46084 16.6256 6.24021 16.3465L1.0679 9.80313C0.691167 9.32653 0.772124 8.63477 1.24872 8.25804C1.72532 7.88131 2.41708 7.96226 2.79381 8.43886L7.00837 13.7706L15.1811 0.988299C15.5084 0.476464 16.1886 0.326833 16.7004 0.654089Z"
+													></path>
+												</svg>
+											</div>
+											<div class="modal-buy__variant">
+												<div>
+													<img
+														class="modal-buy__variant-img"
+														src="https://static-site.cinemabox.team/widget/common/assets/pushkinsCard-91f8c162.svg"
+														alt=""
+													/>Пушкинская карта
+												</div>
+
+												<svg
+													viewBox="0 0 18 17"
+													xmlns="http://www.w3.org/2000/svg"
+													fill="currentColor"
+													class="m:cb-w-3 d:cb-w-4 cb-text-[color:var(--mainLevel1)]"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M16.7004 0.654089C17.2123 0.981346 17.3619 1.66156 17.0346 2.1734L8.02993 16.2569C7.83828 16.5567 7.51349 16.7452 7.15816 16.763C6.80283 16.7808 6.46084 16.6256 6.24021 16.3465L1.0679 9.80313C0.691167 9.32653 0.772124 8.63477 1.24872 8.25804C1.72532 7.88131 2.41708 7.96226 2.79381 8.43886L7.00837 13.7706L15.1811 0.988299C15.5084 0.476464 16.1886 0.326833 16.7004 0.654089Z"
+													></path>
+												</svg>
+											</div>
+										</div>
+										<div class="modal-buy__label">Детали заказа</div>
+										<div class="modal-buy__selected-seats" id="selectedSeats">
+											<div class="model-buy__selected-seat">
+												<div>
+													1ряд, 7место
+													<span>370p</span>
+												</div>
+											</div>
+											<div class="model-buy__selected-seat">
+												<div>
+													1ряд, 7место
+													<span>370p</span>
+												</div>
+											</div>
+											<div class="model-buy__selected-seat">
+												<div>
+													1ряд, 7место
+													<span>370p</span>
+												</div>
+											</div>
+										</div>
+										<div class="modal-buy_tottal">К оплате <span id="sum">1800р</span></div>
+									</div>
+								</div>
+
+								<div class="modal-buy__btns">
+									<button id="prev">
+										<svg
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											xmlns="http://www.w3.org/2000/svg"
+											class="cb-w-6 cb-h-6"
+										>
+											<path
+												d="M11.2778 7.22792C11.7074 6.79834 11.7074 6.10186 11.2778 5.67228C10.8483 5.2427 10.1518 5.2427 9.72221 5.67228L3.72221 11.6723C3.29263 12.1019 3.29263 12.7983 3.72221 13.2279L9.72221 19.2279C10.1518 19.6575 10.8483 19.6575 11.2778 19.2279C11.7074 18.7983 11.7074 18.1019 11.2778 17.6723L7.15566 13.5501H20C20.6075 13.5501 21.1 13.0576 21.1 12.4501C21.1 11.8426 20.6075 11.3501 20 11.3501H7.15566L11.2778 7.22792Z"
+											></path>
+										</svg>
+									</button>
+									<button id="next" style="width: 300px" disabled>Далее</button>
+									<button id="buy" style="width: 300px; display: none">Купить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="/js/moment.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/ru.min.js"
+			integrity="sha512-j5j9djiluSFyBwFHffI4b5CcyyyX02BSVBadb3ee8489Pl7Mj8uhsdbKNjeMDqaSx93iHty+rMchTZ0/3wVSBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

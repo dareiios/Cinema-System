@@ -1,0 +1,97 @@
+.footer__content {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding-top: 30px;
+}
+
+.footer__menu {
+	display: flex;
+	color: #fff;
+	margin-top: 30px;
+}
+
+.footer__menu h4 {
+	font-size: 18px;
+}
+
+.footer__menu-group ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+}
+
+.footer__menu-group + .footer__menu-group {
+	margin-left: 70px;
+}
+
+.footer__menu a {
+	transition: all linear 200ms;
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer__menu a:hover {
+	color: #bd257f;
+}
+
+.footer__social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 180px;
+}
+
+.footer__social-item {
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	transition: all linear 200ms;
+}
+
+.footer__social-item:hover {
+	background-color: #fff;
+}
+
+.footer__social-item svg {
+	fill: #fff;
+	transition: all linear 200ms;
+}
+
+.footer__social-item:hover svg {
+	fill: rgb(33, 37, 41);
+}
+
+.footer__app {
+	margin-top: 40px;
+	display: flex;
+	color: #fff;
+}
+
+.footer__phone {
+	width: 196px;
+	height: 276px;
+	margin-right: 40px;
+}
+
+.footer__app h4 {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-size: 19px;
+}
+
+.footer__app p {
+	max-width: 200px;
+}
+
+.footer__copyright {
+	padding: 30px 0px;
+	text-align: center;
+	color: #888;
+	font-size: 12px;
+}

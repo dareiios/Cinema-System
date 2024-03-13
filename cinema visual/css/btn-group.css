@@ -1,0 +1,40 @@
+.btn-group {
+	border: none;
+	text-transform: uppercase;
+	color: hsla(0, 0%, 100%, 0.5);
+	font-size: 14px;
+	font-weight: 500px;
+}
+
+.btn-group-link {
+	text-transform: uppercase;
+	color: hsla(0, 0%, 100%, 0.5);
+	font-size: 14px;
+	font-weight: 500px;
+	letter-spacing: 1px;
+	position: relative;
+	transition: all linear 200ms;
+}
+
+.btn-check:checked + .btn-group-link {
+	color: white;
+	box-shadow: none;
+}
+
+.btn-group-link:hover {
+	color: white;
+}
+
+.btn-check:checked + .btn-group-link::after {
+	position: absolute;
+	content: '';
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	background-color: #bd257f;
+	width: 20px;
+	height: 2px;
+	border-radius: 12px;
+	transition: all linear 200ms;
+}

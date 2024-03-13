@@ -1,0 +1,27 @@
+.promo {
+	color: #fff;
+	background-color: #3a3a3a;
+	padding: 80px 0px;
+	margin-top: 80px;
+}
+
+.promo__content {
+	max-width: 595px;
+	margin-right: 85px;
+}
+
+.promo__title {
+	font-size: 1.5em;
+	margin-bottom: 16px;
+}
+
+.promo__text {
+	margin-bottom: 32px;
+	font-size: 16px;
+}
+
+.promo__img {
+	width: 594px;
+	height: 329px;
+	border-radius: 12px;
+}

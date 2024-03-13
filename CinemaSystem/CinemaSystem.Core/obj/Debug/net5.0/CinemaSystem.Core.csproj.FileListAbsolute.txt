@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\bin\Debug\net5.0\CinemaSystem.Core.deps.json
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\bin\Debug\net5.0\CinemaSystem.Core.runtimeconfig.json
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\bin\Debug\net5.0\CinemaSystem.Core.runtimeconfig.dev.json
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\bin\Debug\net5.0\CinemaSystem.Core.dll
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\bin\Debug\net5.0\CinemaSystem.Core.pdb
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\CinemaSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\CinemaSystem.Core.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\CinemaSystem.Core.AssemblyInfo.cs
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\CinemaSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\CinemaSystem.Core.dll
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\ref\CinemaSystem.Core.dll
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\CinemaSystem.Core.pdb
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\CinemaSystem.Core.genruntimeconfig.cache
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\CinemaSystem.Core.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\CinemaSystem\CinemaSystem.Core\obj\Debug\net5.0\refint\CinemaSystem.Core.dll

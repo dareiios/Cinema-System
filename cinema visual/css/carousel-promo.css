@@ -1,0 +1,8 @@
+.carousel-promo,
+.carousel-item {
+	max-height: 436px;
+}
+.carousel-item img {
+	object-fit: cover;
+	max-height: 436px;
+}

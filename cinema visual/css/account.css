@@ -1,0 +1,15 @@
+.account {
+	color: white;
+}
+
+.account__ticket {
+	background-color: #bfbfbf;
+	display: flex;
+	color: black;
+}
+
+.account__poster {
+	width: 150px;
+	height: 200px;
+	margin-right: 10px;
+}

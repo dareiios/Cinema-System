@@ -1,0 +1,519 @@
+.modal-buy .modal-dialog {
+	min-width: 1280px;
+}
+
+.modal-buy .modal-content {
+	border-radius: 32px;
+	padding: 12px;
+}
+
+.modal-buy__status {
+	display: flex;
+	align-items: center;
+}
+
+.modal-buy__status-item {
+	display: flex;
+	align-items: center;
+}
+
+.modal-buy__status-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 55px;
+	height: 55px;
+	border: 2px solid rgba(60, 60, 67, 0.18);
+	border-radius: 50%;
+	margin-right: 12px;
+}
+
+.modal-buy__status-item svg {
+	fill: rgba(60, 60, 67, 0.18);
+	width: 40px;
+}
+
+.modal-buy__status-item.active {
+	color: #bd257f;
+}
+
+.modal-buy__status-item.active svg {
+	fill: #bd257f;
+}
+
+.modal-buy__status-item.success {
+	color: green;
+}
+
+.modal-buy__status-item.succses svg {
+	fill: green;
+}
+
+.modal-buy__status-item + .modal-buy__status-item {
+	margin-left: 80px;
+}
+
+.modal-buy__info {
+	display: flex;
+	/* display: none; */
+}
+
+.modal-buy__poster {
+	width: 280px;
+	height: 420px;
+	margin-right: 30px;
+	border-radius: 32px;
+}
+
+.modal-buy__film {
+	min-width: 503px;
+}
+
+.modal-buy__film h2 {
+	max-width: 520px;
+}
+
+.modal-buy__film span {
+	color: rgba(60, 60, 67, 0.6);
+	font-size: 17px;
+}
+
+.modal-buy__tags {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-top: 30px;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.modal-buy__tags li {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	width: 40px;
+}
+
+.modal-buy__tags span {
+	border: 1px solid black;
+	border-radius: 4px;
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 26px;
+	width: 40px;
+}
+
+.modal-buy__tags li + li {
+	margin-left: 20px;
+}
+
+.modal-buy__props {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 17px;
+	color: black;
+	margin-bottom: 30px;
+}
+
+.modal-buy__props div {
+	display: inline;
+}
+
+.modal-buy__props span {
+	margin-right: 30px;
+}
+
+.modal-buy__film p {
+	font-size: 17px;
+	color: black;
+	max-width: 520px;
+}
+
+.model-buy__seances {
+	margin-left: 20px;
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.model-buy__seances-item h3 {
+	font-size: 20px;
+	color: black;
+	margin-bottom: 16px;
+}
+
+.model-buy__card {
+	border: 1px solid rgba(120, 120, 128, 0.2);
+	border-radius: 16px;
+	padding: 20px;
+	min-width: 372px;
+}
+
+.model-buy__seances-item + .model-buy__seances-item {
+	margin-top: 20px;
+}
+
+.model-buy__card button {
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	background: #fff;
+	border-radius: 16px;
+	border: none;
+	line-height: 32px;
+	font-size: 26px;
+	display: inline-flex;
+	flex-direction: column;
+	padding: 15px;
+	position: relative;
+}
+
+.model-buy__card span {
+	font-size: 13px;
+	line-height: 16px;
+	color: rgba(60, 60, 67, 0.6);
+}
+
+.model-buy__card div {
+	color: #fff;
+	position: absolute;
+	font-size: 13px;
+	background-color: #bd257f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 16px;
+	width: 25px;
+	top: 0;
+	right: 0;
+}
+
+.modal-buy__view {
+	/* display: flex; */
+	display: none;
+}
+
+.modal-buy__hall {
+	border: 1px solid grey;
+	border-radius: 16px;
+	padding: 13px;
+	margin-right: 16px;
+}
+
+.modal-buy__hall-header {
+	background: #fff;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 16px;
+	font-weight: 600;
+	height: 56px;
+	border-radius: 16px;
+	margin-bottom: 15px;
+}
+
+.modal-buy__tickets {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.modal-buy__tickets div {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	background-color: #fff;
+	border-radius: 1.5rem;
+	height: 1.75rem;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	font-size: 15px;
+}
+
+.modal-buy__tickets .circle {
+	margin-right: 0.5rem;
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	display: block;
+}
+
+.modal-buy__tickets .circle.normal {
+	background-color: rgb(125, 177, 229);
+}
+
+.modal-buy__tickets .circle.vip {
+	background-color: #bd257f;
+}
+
+.modal-buy__tickets .circle.saled {
+	background-color: rgba(128, 128, 128, 0.25);
+}
+
+.modal-buy__tickets div + div {
+	margin-left: 10px;
+}
+
+.modal-buy__hall-header span {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.modal-buy__hall-view {
+	display: flex;
+	justify-content: center;
+}
+
+.modal-buy__nums div {
+	line-height: 30px;
+}
+
+.modal-buy__nums div + div {
+	margin-top: 2px;
+}
+
+.modal-buy__seats {
+	margin: 0 15px;
+}
+
+.modal-buy__row {
+	display: flex;
+	align-items: center;
+}
+
+.modal-buy__seat {
+	outline: none;
+	border: none;
+	border-radius: 0.375rem;
+	height: 30px;
+	width: 30px;
+	background-color: rgb(125, 177, 229);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	justify-content: center;
+	font-size: 15px;
+	font-weight: 600px;
+}
+
+.modal-buy__seat.vip {
+	background-color: #bd257f;
+}
+
+.modal-buy__seat.saled {
+	background-color: rgba(128, 128, 128, 0.25);
+	pointer-events: none;
+}
+
+.modal-buy__seat.selected {
+	background-color: rgb(255, 170, 0);
+}
+
+.modal-buy__seat + .modal-buy__seat {
+	margin-left: 2px;
+}
+
+.modal-buy__row + .modal-buy__row {
+	margin-top: 2px;
+}
+
+.modal-buy__hall-description {
+	position: relative;
+	padding-bottom: 50px;
+	width: 100%;
+}
+
+.modal-buy__hall-description h2 {
+	font-size: 22px;
+}
+
+.modal-buy__hall-info span {
+	display: block;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: rgba(60, 60, 67, 0.6);
+}
+
+.modal-buy__hall-description-tags {
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.modal-buy__hall-description-tags span {
+	font-size: 15px;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	border: 1px solid rgba(120, 120, 128, 0.2);
+	border-radius: 10px;
+}
+
+.modal-buy__hall-description-tags span + span {
+	margin-left: 15px;
+}
+
+.modal-buy__btns {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.modal-buy__btns button {
+	outline: none;
+	cursor: pointer;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 1rem;
+	background-color: rgba(120, 120, 128, 0.08);
+	border: none;
+}
+
+.model-buy__selected-seats {
+	margin-top: 30px;
+}
+
+.model-buy__selected-seats h4 {
+	line-height: 18px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: rgba(60, 60, 67, 0.6);
+	margin-bottom: 10px;
+}
+
+.model-buy__selected-seats-tickets {
+	height: 285px;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+.model-buy__selected-seat {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	padding: 15px 25px;
+}
+
+.model-buy__selected-seat + .model-buy__selected-seat {
+	margin-top: 15px;
+}
+
+.model-buy__selected-seat div {
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+}
+
+.model-buy__selected-seat span {
+	margin-top: 10px;
+	color: rgba(60, 60, 67, 0.6);
+}
+
+.model-buy__selected-seat button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	fill: grey;
+}
+
+.model-buy__selected-seat svg {
+	fill: grey;
+	height: 30px;
+}
+
+.model-buy__pay {
+	display: none;
+}
+
+.model-buy__pay h4 {
+	margin-top: 20px;
+}
+
+.model-buy__pay input {
+	font-size: 17px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-radius: 0.75rem;
+	height: 52px;
+	background-color: #fff;
+	border-width: 1px;
+	width: 100%;
+	border-color: rgba(60, 60, 67, 0.18);
+	margin-bottom: 15px;
+	transition: all linear 200ms;
+}
+
+.model-buy__pay input:focus {
+	outline: none;
+	border-color: #bd257f;
+}
+
+.modal-buy__label {
+	color: rgba(60, 60, 67, 0.6);
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 18px;
+	margin-bottom: 0.5rem;
+}
+
+.modal-buy__variants {
+	padding: 0 10px;
+	background-color: #fff;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.modal-buy__variant {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.modal-buy__variant div {
+	display: flex;
+	align-items: center;
+}
+
+.modal-buy__variant svg {
+	fill: #bd257f;
+	width: 16px;
+	height: 16px;
+	display: none;
+}
+
+.modal-buy__variant.selected svg {
+	display: block;
+}
+
+.modal-buy__variant-img {
+	width: 56px;
+	height: 36px;
+	margin-right: 30px;
+}
+
+.modal-buy__selected-seats {
+	height: 190px;
+	overflow-y: auto;
+}
+
+.modal-buy_tottal {
+	margin-bottom: 80px;
+	margin-top: 20px;
+	font-weight: bold;
+}

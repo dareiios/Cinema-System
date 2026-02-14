@@ -9,8 +9,11 @@ There is functionality for logging in and creating a new account using JWT token
 
 ## Business Logic
 -Personal Account (registration, authentication, ticket purchase history).
+
 -Movie and Session Catalog (additional filtering by genre and by "Pushkin Card" is planned).
+
 -Ticket Purchase, displaying purchased tickets in the personal account and via email.
+
 -Administrator Functionality: adding, editing, and deleting movies and sessions (not fully completed; editing sessions and improving image display are planned).
 
 ## Database Schema
